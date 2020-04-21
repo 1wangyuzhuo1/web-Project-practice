@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.board{
+				width:200px;
+				height: 10px;
+				position: absolute;
+				background-color: yellow;
+			}
+			.ball{
+				width: 30px;
+				height: 30px;
+				background-color: red;
+				border-radius:50%;
+				position: absolute;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="board" class="board"></div>
+		<div id="ball" class="ball"></div>
+		<script type="text/javascript">
+			var oboard=document.getElementById("board");
+			var oball=document.getElementById("ball");
+			//构造函数
+			function Board(top,left){
+				this.top=top;
+				this.left=left;
+				this.init();
+				//
+				this.dom=null;
+				this.width=200;
+				this.rander();
+				this.binEvent();
+			}
+			//初始化函数
+			Board.prototype.init=function(){
+				this.dom=document.createElement("div");
+				this.dom.className="board";
+				document.body.appendChild(this.dom);
+			}
+			//木板的渲染
+			Board.prototype.rander=function(){
+				this.dom.style.top=this.top+"px";
+				this.dom.style.left=this.left+"px";
+			}
+			//给木板添加一个鼠标移动的事件
+			Board.prototype.binEven=function(){
+				var self=this;
+				document.onmousemove=function(even){
+					event=event||window.event;
+					self.left=event.clientX;
+					
+					if(self.left<0){
+						self.left=0;
+					}
+					if(self.left>width-self.width){
+						self.left=width-self.width;
+					}
+					
+					self.rander();
+				}
+			}
+			var height=document.documentElement.clientHeight||document.body.clientHeight;
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var board=new Board(height-4-100,(width-200)/2);
+			
+			function Ball(top,left,deltaX,deltaY){
+				this.top=top;
+				this.left=left;
+				this.deltaX=deltaX;
+				this.deltaY=deltaY;
+				this.speed=30;
+				this.dom=null;
+				this.timer=null;
+				this.d=30;
+				this.init();
+				this.move();
+			}
+		</script>
+	</body>
+</html>

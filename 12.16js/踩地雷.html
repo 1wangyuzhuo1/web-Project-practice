@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var dilei=parseInt(Math.random()*100+1);
+			var xiaxian=1;
+			var shangxian=100;
+			while(true){
+				var x=parseInt(prompt("请输入一个数在"+xiaxian+"和"+shangxian+"之间"));
+				if(x>xiaxian&&x<shangxian){
+					if(x>dilei){
+						shangxian=x;
+					}else if(x<dilei){
+						xiaxian=x;
+					}else{
+						alert("抱歉踩到地雷了");
+						break;
+					}
+				}else{
+					alert("请输入正确数字");
+				}
+				
+			}
+		</script>
+	</body>
+</html>

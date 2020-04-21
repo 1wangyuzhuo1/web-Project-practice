@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#all
+			{
+				border:1 solid black;
+				width:1000px;
+				height:1500px;
+			}
+			#one
+			{
+				border:1 ;
+				width:1000px;
+				height:25px;
+				background-color:lavender;
+				float:left;
+			}
+			#one0
+			{
+				border:1 ;
+				width:500px;
+				height:25px;
+				background-color:lavender;
+				font-size:13px;
+				line-height:25px;
+				float:left;
+			}
+			#one1
+			{
+			  border:1;
+			  width:120px;
+			  height:35px;
+			  line-height:35px;
+			  float:left;	
+			}
+			#one2
+			{
+				border:1px;
+				width:70px;
+				height:20px;
+				line-height:35px;
+				float:left;
+			}
+			#one3
+			{
+				border:1px;
+				width:70px;
+				height:20px;
+				line-height:35px;
+				float:left;
+			}
+			#one4
+			{
+				border:1px;
+				width:70px;
+				height:20px;
+				line-height:35px;
+				float:left;
+			}
+			#one5
+			{
+			  border:1;
+			  width:120px;
+			  height:35px;
+			  line-height:35px;
+			  float:left;	
+			}
+			#two
+			{
+				border:1 ;
+				width:1000px;
+				height:70px;
+				background-color:white;
+				float:left;
+			}
+			#two1
+			{
+			    border:1 ;
+			    width:400px;
+			    height:70px;
+			    float:left;	
+			}
+			#two2
+			{
+			    border:1 ;
+			    width:150px;
+			    height:25px;
+			    float:left;	
+			    line-height:46px;
+			}
+			#two3
+			{
+			    border:1 ;
+			    width:160px;
+			    height:30px;
+			    float:left;	
+			    line-height:60px;
+			}
+			#two4
+			{
+				border:1  ;
+				width:300px;
+				height:10px;
+				color:red;
+				font-size:12px;
+				float: left;
+                line-height:23px;
+			}
+			#two5
+			{
+				border:1 ;
+				width:280px;
+				height:17px;
+				float:left;
+				font-size:14px;
+				line-height:20px;
+				
+			}
+			#two6
+			{
+				border:1 ;
+				width:250px;
+				height:39px;
+				float:left;
+				position: relative;
+				top: -10px;	
+			}
+			#three
+			{
+				border:1 ;
+				width:1000px;
+				height:30px;
+				background-color:darkred;
+				color:white;
+				font-weight:boid;
+                line-height:25px;
+                float:left;
+			}
+			#three1
+			{
+				border:1 ;
+				width:1000px;
+				height:40px;
+				background-color:white;
+                line-height:35px;
+                float:left;
+			}
+			#three2
+			{
+				border:1 ;
+				width:1000px;
+				height:62px;
+                float:left;
+			}
+			#three03
+			{
+				border:1 ;
+				height:350px;
+                float:left;
+			}
+			#three3
+			{
+				border:1 ;
+				width:710px;
+				height:345px;
+				overflow:hidden;
+                float:left;
+			}
+			#three33
+			{
+				border:1 ;
+				width:280px;
+				height:228px;
+                float:left;
+			}
+			#three333
+			{
+				border:1 ;
+				width:280px;
+				height:120px;
+                float:left;
+			}
+			#four
+			{
+				border:1 ;
+				width:950px;
+				height:40px;
+				background-color:white;
+				float:left;
+			}
+			#four1
+			{
+				border:1 ;
+				width:250px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four11
+			{
+				border:1 ;
+				width:600px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#four111
+			{
+				border:1 ;
+				width:100px;
+				height:20px;
+				float:left;
+				font-size:15px;
+				margin-top:5px;
+			}
+			#four2
+			{
+				border:1 ;
+				width:950px;
+				height:40px;
+				background-color:white;
+				float:left;
+			}
+			#four22
+			{
+				border:1 ;
+				width:250px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four222
+			{
+				border:1 ;
+				width:600px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#four2222
+			{
+				border:1 ;
+				width:100px;
+				height:20px;
+				float:left;
+				font-size:15px;
+				margin-top:5px;
+			}
+			#four3
+			{
+				border:1 ;
+				width:950px;
+				height:40px;
+				background-color:white;
+				float:left;
+			}
+			#four33
+			{
+				border:1 ;
+				width:250px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four333
+			{
+				border:1 ;
+				width:600px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#four3333
+			{
+				border:1 ;
+				width:100px;
+				height:20px;
+				float:left;
+				font-size:15px;
+				margin-top:5px;
+			}
+			#four4
+			{
+				border:1 ;
+				width:950px;
+				height:40px;
+				background-color:white;
+				float:left;
+			}
+			#four44
+			{
+				border:1 ;
+				width:250px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four444
+			{
+				border:1 ;
+				width:600px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#four4444
+			{
+				border:1 ;
+				width:100px;
+				height:20px;
+				float:left;
+				font-size:15px;
+				margin-top:5px;
+			}
+			#four5
+			{
+				border:1 ;
+				width:950px;
+				height:40px;
+				background-color:white;
+				float:left;
+			}
+			#four55
+			{
+				border:1 ;
+				width:400px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four555
+			{
+				border:1 ;
+				width:100px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#four5555
+			{
+				border:1 ;
+				width:300px;
+				height:30px;
+				float:left;
+				margin-top:5px;
+			}
+			#four55555
+			{
+				border:1 ;
+				width:150px;
+				height:20px;
+				float:left;
+				font-size:15px;
+               margin-top:5px;
+			}
+			#five
+			{
+				border:1 solid black;
+				width:1000px;
+				height:300px;
+				float:left;
+			}
+			#five1
+			{
+				border:1 solid black;
+				width:200px;
+				height:300px;
+				float:left;
+			}
+			#five2
+			{
+				border:1 solid black;
+				width:150px;
+				height:300px;
+				float:left;
+			}
+			#five3
+			{
+				border:1 solid black;
+				width:150px;
+				height:300px;
+				float:left;
+			}
+			#five4
+			{
+				border:1 solid black;
+				width:250px;
+				height:300px;
+				float:left;
+			}
+			#five5
+			{
+				border:1 solid black;
+				width:240px;
+				height:300px;
+				float:left;
+			}
+			#five55
+			{
+				font-size:15px;
+				float:left;
+			}
+			#six
+			{
+				border:1 ;
+				width:999px;
+				height:100px;
+				margin-top:20px;
+				float:left;
+			}
+			#six1
+			{
+				border:1 ;
+				width:999px;
+				height:300px;
+				margin-top:20px;
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="all">
+		<!--第一层开始-->
+		<div id="one" >
+			<div id="one0">
+			您好，欢迎光临凡客诚品！<font color="darkred">[ 登录 | 免费注册 ]</font>为您推荐  我的订单 
+			</div>
+			<div id="one1">
+        	<img width="110"height="25"src="img/q1.jpg">
+            </div>
+            <div id="one2">
+            <img width="60"height="20"src="img/q2.jpg">
+            </div>
+            <div id="one3">
+            <img width="60"height="20"src="img/q3.jpg">
+            </div>
+            <div id="one4">
+            <img width="60"height="20"src="img/q4.jpg">
+            </div>
+            <div id="one5">
+        	<img width="110"height="25"src="img/q5.jpg">
+            </div>
+        </div>
+        <!--第一层结束-->
+        <!--第二层开始-->
+        <div id="two">
+        	<div id="two1">
+        		<img  width="350"height="60"src="img/logo.jpg">
+        	</div>
+        	<div id="two2">
+        		<input type="text">
+        	</div>
+        	<div id="two3">
+        		<img src="img/6.jpg">
+        	</div>
+        	<div id="two5">
+        	■English ■ 网站联盟 ■ 帮助中心 ■ 团购秒杀 	
+        	</div>
+        	<div id="two4">
+        		热门关键词:<font color="#000000">长袖T恤 帆布 鞋 长裤 衬衫 箱包</font>
+        	</div>
+        	<div id="two6">
+        		<img width="80" height="50" src="img/1.jpg">
+        		<img width="80" height="50" src="img/2.jpg">
+        		<img width="80" height="50" src="img/3.jpg">
+        		
+        	</div>
+         <!--第二层结束-->
+        <!--第三层开始-->
+        <div id="three">
+        	首页 帆布鞋 长袖T 衬衫 POLO衫 裙装 卫衣 休闲裤 牛仔 休闲包 休闲鞋 泳装 运动鞋 内裤 丝袜 NBA 
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/4.jpg">
+        </div>
+        <div id="three1">
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男人▼ 女人▼ 童装▼ 男鞋▼ 女鞋▼ 潮运动▼ 内衣▼ 配饰▼ 化妆品▼ 家居▼  箱包▼  时尚▼ 女装▼ 风尚▼ 男装▼ 商城▼ 
+        </div>
+        <div id="three2">
+        	<img  width="1000"src="img/q11.jpg">
+        </div>
+        <div id="three03">
+        <!--广告开始-->
+        <div id="three3">
+        	<img src="img/c1.jpg"/>
+        	<img src="img/c2.jpg"/>
+        	<img src="img/c3.jpg"/>
+        	<img src="img/c4.jpg"/>
+        	<img src="img/c5.jpg"/>
+        	<img src="img/c6.jpg"/>
+        	<img src="img/c7.jpg"/>
+        </div>
+        <!--广告结束-->
+        <div id="three33">
+        	<img src="img/rightbanner_sale_nz_120831.jpg">
+        </div>
+        <div id="three333">
+        	<img  height="120"src="img/rightbanner_new_b_polo_120831.jpg">
+        </div>
+        </div>
+        <!--第三层结束-->
+        <!--第四层开始-->
+        <div id="four">
+        	<div id="four1"><img width="200" height="30"src="img/14.jpg"></div>
+            <div id="four11"> 男装 | 女装 | 鞋 | 童装 | 运动 | 配饰 | 首饰 | 箱包 | 家居 | 化妆品 </div>
+            <div id="four111"> 查看更多>></div>
+	    </div>
+	     <hr color="black" width="1000">
+	      <div id="four2">
+        	<div id="four22"><img width="200" height="30"src="img/11.jpg"></div>
+            <div id="four222">T恤 | 帆布鞋 | 衬衫 | 外套 | 女鞋 | 邮差包 | 小裤 | 时尚女装 | 丝袜 | 棉袜  </div>
+            <div id="four2222"> 查看更多>></div>
+	    </div>
+	     <hr color="black" width="1000">
+	      <div id="four3">
+        	<div id="four33"><img width="200" height="30"src="img/13.jpg"></div>
+            <div id="four333">POLO衫 | 牛仔风 | 欧美女装 | 运动休闲 | 家居服 | 人气帆布鞋 | 多彩邮差包 | NBA系列   </div>
+            <div id="four3333"> 查看更多>></div>
+	    </div>
+	     <hr color="black" width="1000">
+	     <div id="four4">
+        	<div id="four44"><img width="200" height="30"src="img/15.jpg"></div>
+            <div id="four444">休闲鞋 | 68元衬衫 | 时尚休闲裤 | 摇粒绒 | 女款内衣 | 68元卫衣 | 童装清仓 | 团购打折   </div>
+            <div id="four4444"> 查看更多>></div>
+	    </div>
+	     <hr color="black" width="1000">
+	     <div id="four5">
+        	<div id="four55"><img width="200" height="30"src="img/16.jpg"></div>
+            <div id="four555"> 查看更多>></div>
+            <div id="four5555"><img width="200" height="30"src="img/8.jpg"></div>
+            <div id="four55555"> 查看更多>></div>
+	    </div>
+	 <!--第四层结束-->
+	 <!--第五层开始-->
+	       <div id="five">
+	       	<div id="five1">
+	       		<img  width="200"height="300"src="img/advstar_lb_120831.jpg">
+	       	</div>
+	       		<div id="five2">
+	       		<img  width="150"height="300"src="img/advstar_cs_120824.jpg">
+	       	</div>
+	       	<div id="five3">
+	       		<img  width="150"height="300"src="img/advstar_nz_120824.jpg">
+	       	</div>
+	       	<div id="five4">
+	       		<img  width="250"height="300"src="img/advstar_wsfk_120831.jpg">
+	       	</div>
+	       	<div id="five5">
+	       		<pre id="five55">
+    凡客打造“潮牌高质”新形象
+
+    凡客库存周转率提升近3倍
+
+     凡客回归产品“自救”
+ 
+    凡客数据揭密女士畅销内裤
+
+    凡客发布POLO衫流行趋势
+
+     凡客“裙摆指数”成经济晴雨表
+ 
+     2012凡客盛典-挑战与信心
+	       		</pre>
+	       	</div>
+	       </div>
+	 <!--第五层结束-->
+	 <!--第六层开始-->
+	 <div id="six">
+	 	<img  width="999"height="70"src="img/vancldt_120831_01.jpg">
+	 </div>
+	 <div id="six1">
+	 	<img  width="999"height="300"src="img/NP.jpg">
+	 </div>
+	 <!--第六层结束-->
+	</body>
+</html>

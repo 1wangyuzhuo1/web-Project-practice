@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 5000px;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.onload=function(){
+				var box=document.getElementsByTagName("div")[0];
+				//box  点击盒子鼠标不可以滚动
+				//window   鼠标在盒子上可以滚动
+				box.onmousewheel=function(event){
+					//event.preventDefault() 说明 该方法将通知 Web 
+					//浏览器不要执行与事件关联的默认动作(如果存在这样的动作)。
+					event.preventDefault();
+				}
+			}
+		</script>
+		<div ></div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			div[o="aaa"]{
+				width:60px;
+				height:100px;
+				background-color:aqua;
+				margin:10px;
+			}
+			div[o^="one"]{
+				width:60px;
+				height:100px;
+				background-color:yellow;
+			}
+			div[o$="3"]{
+				width:60px;
+				height:100px;
+				background-color:red;
+			}
+			div[o|="two2"]{
+				width:60px;
+				height:100px;
+				background-color:orange;
+			}
+			div[o*="two"]{
+				width:60px;
+				height:200px;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div o="aaa">1</div>
+		<div o="one23">2</div>
+		<div o="one13">3</div>
+		<div o="one2">4</div>
+		<div o="two2-1">5</div>
+		<div o="two2-2">6</div>
+		<div o="two 5">7</div>
+		<div o="two 51">8</div>
+		<div o="two">9</div>
+		<div o="one7"></div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			/*父级*/
+			
+			#box {
+				width: 600px;
+				height: 400px;
+				border: 1px solid #000;
+				position: relative;
+				margin: 100px;
+			}
+			
+			p {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				background-color: red;
+				border-radius: 50%;
+				top: 100px;
+				left: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box"></div>
+		<script type="text/javascript">
+			var box = document.getElementById("box");
+			//小球的构造函数
+			function Ball(left, top) {
+				//圆的直径
+				this.d = 30;
+				//或者出现随机数  盒子的宽度减去直径   left活动范围
+				this.left = left || Math.random() * (box.clientWidth - this.d);
+				this.top = top || Math.random() * (box.clientHeight - this.d);
+				//自己直径
+				//每步移动的x和y   -5~+5  之间   误差  10
+				this.deltaX = parseInt(Math.random() * 11) - 5;
+				this.deltaY = parseInt(Math.random() * 11) - 5;
+				this.init();
+				this.move();
+			}
+			//初始化函数
+			Ball.prototype.init = function() {
+				this.dom = document.createElement("p");
+				box.appendChild(this.dom);
+			}
+			//小球的渲染
+			Ball.prototype.render = function() {
+				this.dom.style.left = this.left + "px";
+				this.dom.style.top = this.top + "px";
+			}
+			//移动函数
+			Ball.prototype.move = function() {
+				//备份
+				var self = this;
+				//定时器
+				this.timer = setInterval(function() {
+					//移动多次
+					self.left += self.deltaX;
+					self.top += self.deltaY;
+					//检测临界值的判断
+					if(self.top >= box.clientHeight - self.d || self.top <= 0) {
+						self.deltaY = - self.deltaY;
+					}
+					if(self.left >= box.clientWidth - self.d || self.left <= 0) {
+						self.deltaX = - self.deltaX;
+						//=-负的取反
+					}
+					self.render();
+				}, 10)
+
+			}
+			new Ball();
+			new Ball();
+			new Ball();
+			new Ball();
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#all{
+				width: 1000px;
+				height: 40px;
+				margin: 50px auto;
+				/*border: 1px solid black;*/
+			}
+			#all ul{
+				list-style: none;
+			}
+			#all ul li{
+				float: left;
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: pink;
+				position: relative;	
+			}
+			#all ul li a{
+				text-decoration: none;
+				color:white;	
+			}
+			.box{
+				position: absolute;
+				top: 40px;
+				left: 0;
+				display:none;/*将二级菜单隐藏*/
+				padding-top: 10px;
+			}
+			.inbox{
+				background-color: papayawhip;
+			}
+			.inbox a{
+				display: block;/*行内元素转换为块级元素*/
+				height: 30px;
+				line-height: 30px;
+			}
+			.inbox a:hover{
+				background-color: palevioletred;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<ul>
+				<li>
+					<a href="#">1</a>
+					<div class="box">
+						<div class="inbox">
+							<p><a href="#">111111111111</a></p>
+							<p><a href="#">111111111111</a></p>
+							<p><a href="#">111111111111</a></p>
+							<p><a href="#">111111111111</a></p>
+							<p><a href="#">111111111111</a></p>
+							<p><a href="#">111111111111</a></p>
+				            <p><a href="#">111111111111</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">2</a>
+					<div class="box">
+						<div class="inbox">
+							<p><a href="#">222222222222</a></p>
+							<p><a href="#">222222222222</a></p>
+							<p><a href="#">222222222222</a></p>
+							<p><a href="#">222222222222</a></p>
+							<p><a href="#">222222222222</a></p>
+							<p><a href="#">222222222222</a></p>
+				            <p><a href="#">222222222222</a></p>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+			</ul>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("li").mouseenter(function(){
+				$(this).children(".box").slideDown() //下滑展开
+			})
+			$("li").mouseleave(function(){
+				$(this).children(".box").slideUp() //上滑收回
+			})
+		</script>
+	</body>
+</html>

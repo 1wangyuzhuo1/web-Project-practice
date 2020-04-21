@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 79px;
+				height:108px;
+				background: url(img/girl.png) no-repeat;
+				background-position:0px -214px ;
+				position: absolute;
+				top: 100px;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div ></div>-->
+		<script type="text/javascript">
+			//新定义一个div
+			var dom=document.createElement("div");
+			//让它显示在body上
+			document.body.appendChild(dom);
+			//获取div
+			var oDiv=document.getElementsByTagName("div")[0];
+			//定义
+			var buzi=0;
+			//图片一开始离左边的距离
+			var nowleft=0;
+			/*定时器*/
+			setInterval(function(){
+				//人走动的时候离左边的距离
+				nowleft+=4;
+				buzi++;
+				//一行有八个,判断是否走到头
+				if(buzi>7){
+					//到头之后让她等与0
+					buzi=0;
+				}
+				oDiv.style.left=nowleft+"px";
+				oDiv.style.backgroundPosition=-buzi*79+"px -214px";
+			},60)
+		</script>
+	</body>
+</html>

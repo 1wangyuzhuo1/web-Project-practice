@@ -1,0 +1,61 @@
+#all
+{
+	border: 1px ;
+	width:1000px;
+	height:800px;
+}
+#one
+{
+	border: 1px  ;
+	width:400px;
+	height:800px;
+	float:left;
+}
+#one1
+{
+	border: 1px ;
+	width:300px;
+	height:200px;
+	margin-top:250px;
+}
+#two
+{
+	border: 1px  ;
+	width:590px;
+	height:800px;
+	float:left;
+}
+#two1
+{
+	border: 1px   ;
+	border-radius:20px;
+	background-color:white;
+	width:450px;
+	height:400px;
+	margin-top:250px;
+	
+}
+#two2
+{
+	border: 1px   ;
+	border-radius:20px;
+	width:300px;
+	height:300px;
+	position:relative;
+	top:-40px;
+	
+}
+h1
+{
+	 color:white;
+}
+#wyz
+{
+	border: 1px ;
+	whith:1000px;
+	height:200px;
+}
+pre
+{
+	color:white;
+}

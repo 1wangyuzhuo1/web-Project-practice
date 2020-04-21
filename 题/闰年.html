@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--用户输入一个年份，判断这个年是否是闰年。
+ 判断闰年条件：
+① 非整百年数除以4，无余为闰，有余不闰；
+② 整百年数除以400，无余为闰，有余不闰。
+比如：
+2000年，整百数年，就要用②公式，除以400，无余数，所以是闰年。
+1900年，整百年数，就要用②公式，除以400，有余数，所以不是闰年。-->
+
+		<script type="javascript">
+			var year=parseInt(prompt("请输入年份"));
+//			第一种方法
+			if(year%100==0){
+				if(year%400==0){
+					alert("闰年");
+				}else{
+					alert("不闰年");
+				}
+			}else{
+				if(year%4==0){
+					alert("闰年");
+				}else{
+					alert("不闰年");
+				}
+			}
+//			第二种方法
+//			if(是100整数倍且能被400整除||不是100整数倍且能够被4整除)
+			if(year%100==0&&year%400==0||year%100!=0&&year%4==0){
+				alert("是闰年");
+			}else{
+				alert("不是闰年");
+			}
+			
+		</script>
+	</body>
+</html>

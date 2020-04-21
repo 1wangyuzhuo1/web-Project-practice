@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		div{
+			position:  absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+	<body>
+		<div ></div>
+		<script type="text/javascript">
+			var oDiv=document.getElementsByTagName("div")[0];
+			oDiv.onmousedown = function(event) {
+				//鼠标按下时的一个位置，他就是误差
+				var deX=event.clientX-oDiv.offsetLeft;
+				var deY=event.clientY-oDiv.offsetTop;
+				document.onmousemove = function(event) {
+					oDiv.style.left = event.clientX-deX + "px";
+					oDiv.style.top = event.clientY-deY + "px";
+				}
+			}
+			document.onmouseup=function(event){
+				document.onmousemove=null;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+#top
+{
+	border: 1px ;
+	width:1350px;
+	height:30px;
+	background-color:lightblue;
+}
+#top1
+{
+	border: 1px ;
+	width:1000px;
+	height:30px;
+	background-color:lightblue;
+}
+#all
+{
+	border: 1px ;
+	width:1000px;
+	height:1200px;
+}
+a
+{
+	color:white;
+	font-weight:bold;
+	    text-decoration: none;
+}
+#one
+{
+	border: 1px ;
+	width:1000px;
+	height:100px;
+}
+#one1
+{
+	border: 1px ;
+	width:150px;
+	height:100px;
+	float:left;
+}
+#one2
+{
+	border: 1px ;
+	width:300px;
+	height:100px;
+	float:left;
+}
+#one22
+{
+	border: 1px ;
+	width:220px;
+	height:30px;
+	float:left;
+	margin-top:35px;
+}
+#one222
+{
+	border: 1px ;
+	width:75px;
+	height:30px;
+	float:left;
+	margin-top:28px;
+}
+#one33
+{
+	border: 1px ;
+	width:300px;
+	height:100px;
+	float:left;
+	margin-left:50px;
+}
+#one44
+{
+	border: 1px ;
+	width:180px;
+	height:100px;
+	margin-left:10px;
+	float:left;
+}
+#two
+{
+	border:1px ;
+	width:1000px;
+	height:100px;
+	margin-top:20px;
+	float:left;
+}
+#aa
+{
+	color:black;
+}
+
+#two1
+{
+	border:1px ;
+	width:250px;
+	height:100px;
+	float:left;
+}
+#two2
+{
+	border:1px ;
+	width:250px;
+	height:100px;
+	float:left;
+}
+#two3
+{
+	border:1px;
+	width:250px;
+	height:100px;
+	float:left;
+}
+#two4
+{
+	border:1px ;
+	width:242px;
+	height:100px;
+	float:left;
+}
+#three
+{
+	border:1px ;
+	width:1000px;
+	height:200px;
+	margin-top:20px;
+	float:left;
+}
+#four
+{
+	border:1px ;
+	width:1000px;
+	height:530px;
+	margin-top:20px;
+	float:left;
+}
+#four1
+{
+	border:1px ;
+	width:300px;
+	height:530px;
+	float:left;
+}
+#four2
+{
+	border:1px ;
+	width:650px;
+	height:30px;
+	margin-left:30px;
+	float:left;
+}
+#four220
+{
+	border:1px ;
+	width:216px;
+	height:30px;
+	float:left;
+}
+#four221
+{
+	border:1px ;
+	width:216px;
+	height:30px;
+	float:left;
+}
+#four222
+{
+	border:1px ;
+	width:210px;
+	height:30px;
+	background-color:aliceblue;
+	float:left;
+}
+#four3
+{
+	border:1px ;
+	width:650px;
+	height:450px;
+	margin-left:30px;
+	margin-top:30px;
+	background-color:aliceblue;
+	float:left;
+}
+li
+{
+	text-align: left;
+	text-decoration: none;
+}
+#five
+{
+	border:1px;
+	width:1000px;
+	height:300px;
+	margin-top:30px;
+	float:left;
+}

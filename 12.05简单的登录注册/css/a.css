@@ -1,0 +1,124 @@
+#all
+{
+	border: 1px ;
+    width :1000px;
+    height:1000px;
+}
+#one
+{
+	border:1px ;
+	width:1000px;
+	height:100px;
+}
+#one1
+{
+	border:1px ;
+	width:100px;
+	height:100px;
+	float:left;	
+}
+a
+{
+color:white;
+
+	
+}
+#aa
+{
+color:dodgerblue;	
+}
+#one2
+{
+	border:1px ;
+	width:200px;
+	height:50px;
+    line-height:80px ;
+    margin-left: 800px;
+    margin-top:50px;
+    padding-top:50px;
+
+}
+#two
+{
+	border:1px ;
+	width:1000px;
+	height:800px;
+	background-color: white;
+}
+#two1
+{
+	border:1px ;
+	width:1000px;
+	height:50px;
+	background-color: white;
+}
+#two11
+{
+	border:1px ;
+	width:200px;
+	height:50px;
+    float:left;
+    background-color:lightblue;
+}
+#two110
+{
+	border:1px ;
+	width:80px;
+	height:20px;
+    margin-left:60px;
+    margin-top:15px;
+    color:white;
+    font-weight:bold;
+    float:left;
+}
+#two111
+{
+	border:1px ;
+	width:200px;
+	height:50px;
+    float:left;
+}
+#two1110
+{
+	border:1px ;
+	width:80px;
+	height:20px;
+    margin-left:60px;
+    margin-top:15px;
+    font-weight:bold;
+    float:left;
+}
+#three0
+{
+	border:1px ;
+	width:1000px;
+	height:600px;
+    float:left;
+}
+#three
+{
+	border:1px ;
+	width:700px;
+	height:600px;
+	background-color:lightblue;
+    float:left;
+}
+#three1
+{
+	border:1px ;
+	width:296px;
+	height:600px;
+    float:left;
+}
+pre
+{
+	color:firebrick;
+}
+#four
+{
+	border:1px ;
+	width:1000px;
+	height:150px;
+    float:left;
+}
+

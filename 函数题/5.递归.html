@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//递归:函数可以自己调用自己
+			//斐波那契数列
+			//1 1 2 3 5 8 13 21 34 55
+			//除第一位数和第二位数之外     前两位数之和等于第三位数
+			function fib(n){
+				if(n==1&&n==2){
+					return 1;
+				}else{
+					return fib(n-1)+fib(n-2);
+				}
+			}
+			for(var i=1;i<=10;i++){
+				console.log(fib(i));
+			}
+		</script>
+	</body>
+</html>

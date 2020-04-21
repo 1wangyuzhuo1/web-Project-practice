@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="点击" />
+		<script type="text/javascript">
+			var oinput=document.getElementsByTagName("input")[0];
+			var lock=true;                  //锁
+			oinput.onclick=function  () {   //点击触发函数
+				if(!lock) return;            //如果为false就不执行这个事件
+				console.log(Math.random());  //打印随机数
+				lock=false;                  //关锁，
+				setTimeout(function  () {    //1秒之后打开
+					lock=true;
+				},1000)
+			}
+			
+		</script>
+	</body>
+</html>

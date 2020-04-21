@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人简介</title>
+		<style type="text/css">
+			*
+			{
+				padding:0;
+				margin:0;
+			}
+			form
+			{
+				border:1px solid black;
+				width:600px;
+				height:600px;
+				margin:20px auto;
+				background-color:cornflowerblue;
+			}
+			p
+			{
+				margin-left:160px;
+				margin-top:20px;
+			}
+			p.tijiao
+			{
+			    margin-left:200px;	
+			}
+			.tj
+			{
+				width:200px;
+				height:30px;
+				background-color: coral;
+				border:1px;
+				cursor:pointer;  
+			}
+			textarea
+			{
+				resize:none;
+			}
+			input
+			{
+				
+				cursor:pointer;
+			}
+			input
+			{
+				text-indent:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1 align="center" >个人简历</h1>
+			<p ><label>求职意向：</label><input type="text"></p><br>
+			<hr color="aquamarine" size="4"></hr>
+			<p ><label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label><input  placeholder="请输入姓名"type="text"></p>
+			<p ><label>出生年月：</label><input type="datetime-local"></p>
+			<p ><label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label><input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女</p>
+			<p><label>个人邮箱：</label><input type="email"></p>
+		    <p >
+		    	<label>籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯：</label>
+		    	
+		    	<select>
+		    		<option  >陕西省</option>
+		    		<option selected="selected">广东省</option>
+		    		<option>山西省</option>
+		    		<option>山东省</option>
+		    		<option>湖南省</option>
+		    	</select>
+		    </p>
+		    <p ><label>联系电话：</label><input   maxlength="11" type="tel"></p>
+		    <p ><label>个人爱好：</label><input type="checkbox" value="yundong">运动<input type="checkbox" value="yingshi">影视<input type="checkbox" value="food">美食</p>
+		    <p ><label>个人评价：</label><textarea cols="25"rows="5"></textarea></p>
+		    <p class="tijiao"><input class="tj" type="submit" value="提交按钮"></p>
+		</form>
+	</body>
+</html>

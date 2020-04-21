@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		/*产生父子关系,二级菜单*/
+		.box{
+			width: 200px;
+			height: 40px;
+			background-color: red;
+		}
+		.tip{
+			width: 600px;
+			height:300px;
+			background-color: yellow;
+			display: none;  /*先隐藏掉*/
+		}
+	</style>
+	<body>
+		<div id="box" class="box"></div>
+		<div id="tip" class="tip"></div>
+		<script type="text/javascript">
+/*//			点击三秒出现黄色的
+			setTimeout(function (){
+				console.log("你好");
+			},3000)*/
+			var oBox=document.getElementById("box");
+			var oTip=document.getElementById("tip");
+			//鼠标移入3秒后出现黄色
+			oBox.onmouseover=function  () {
+				oTip.style.display="block";//鼠标移入tip出来
+			}
+			oBox.onmouseout=function  () {//鼠标移开，慢慢隐藏
+				setTimeout(function  () {
+					oTip.style.display="none";
+				},600)
+			}
+		</script>
+	</body>
+</html>

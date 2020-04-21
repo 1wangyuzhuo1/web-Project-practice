@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script >
+			localStorage.setItem("xiaoming",'{"name":"xiaoming","age":18,"hobby":"吃"}');
+			
+//			被覆盖k值要相同
+			localStorage.setItem("xiaoming",'{"name":"张三","age":28,"hobby":"睡觉"}');
+			
+			
+			
+			var obj={"students":[]};
+			obj.students.push("xingming",'{"name":"张三","age":28,"hobby":"睡觉"}');
+			obj.students.push("xingming",'{"name":"李四","age":28,"hobby":"睡觉"}');
+			obj.students.push("xingming",'{"name":"小花","age":28,"hobby":"睡觉"}');
+			obj.students.push("xingming",'{"name":"小明","age":28,"hobby":"睡觉"}');
+			var objStr=JSON.stringify(obj);
+			localStorage.setItem("xuesheng",objStr);
+		</script>
+	</body>
+</html>

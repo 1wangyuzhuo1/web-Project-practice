@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			.all {
+				width: 1000px;
+				height: 142px;
+				margin: 30px auto;
+				background-image: url(img/bg_02.jpg);
+				display: flex;
+			}
+			.box{
+				width: 107px;
+				height: 107px;
+				margin: 17.5px 45px;
+				position: relative;
+			}
+			.a{
+				width: 107px;
+				height: 107px;
+				background-image: url(img/a_1.png);
+			}
+			.box:hover .a{
+				background-image: url(img/a_1_h1.png);
+				animation: aa 2s;
+			}
+			.a1 {
+				width: 93px;
+				height: 92px;
+				position: absolute;
+				top: 2px;
+				left: 9px;
+			}
+			
+			.tu {
+				width: 46px;
+				height: 42px;
+				margin-top: 18px;
+				margin-left: 20px;
+			}
+			
+			p {
+				color: white;
+				font-size: 15px;
+				text-align: center;
+			}
+			@keyframes aa {
+				form {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			.b {
+				width: 107px;
+				height: 107px;
+				background-image: url(img/a_2.png);
+			}
+			
+			.box:hover .b{
+				background-image: url(img/a_2_h1.png);
+				animation: aa 3s;
+			}
+			
+			.c {
+				width: 107px;
+				height: 107px;
+				background-image: url(img/a_3.png);
+			}
+			
+			.box:hover .c{
+				background-image: url(img/a_3_h1.png);
+				animation: aa 2s;
+			}
+			
+			.d {
+				width: 107px;
+				height: 107px;
+				background-image: url(img/a_4.png);
+			}
+			
+			.box:hover .d{
+				background-image: url(img/a_4_h1.png);
+				animation: aa 3s;
+			}
+			
+			.e {
+				width: 107px;
+				height: 107px;
+				background-image: url(img/a_5.png);
+			}
+			
+			.box:hover .e{
+				background-image: url(img/a_5_h1.png);
+				animation: aa 3s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<div class="box">
+				<div class="a"></div>
+				<div class="a1">
+					<img class="tu" src="img/tb_1.png">
+					<p>我要陪练</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="b"></div>
+				<div class="a1">
+					<img class="tu" src="img/tb_2.png">
+					<p>班型介绍</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="c"></div>
+				<div class="a1">
+					<img class="tu" src="img/tb_3.png">
+					<p>班车服务</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="d"></div>
+				<div class="a1">
+					<img class="tu" src="img/tb_4.png">
+					<p>在线法陪</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="e"></div>
+				<div class="a1">
+					<img class="tu" src="img/tb_4.png">
+					<p>网上约车</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

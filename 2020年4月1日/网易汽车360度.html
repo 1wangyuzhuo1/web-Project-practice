@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.car_pic{
+				
+			}
+			.car_pic ul{
+				list-style: none;
+			}
+			.car_pic ul li.cur{
+				display: none;
+			}
+			.car_pic_ctr{
+				width: 405px;
+				height: 26px;
+				line-height: 26px;
+				margin: 0 auto;
+				font-size: 12px;
+				background:url() repeat-x 0 -26px;
+			}
+			.ctr_center{
+				float:left;
+				width: 300px;
+				height: 26px;
+				background: url();
+				margin: 0 20px;
+				position: relative;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="car_pic">
+			<div calss="imglist" id="imglist">
+				<ul>
+					<li class="cur"><img src=""/></li>
+					<li ><img src=""/></li>
+					<li ><img src=""/></li>
+					<li ><img src=""/></li>
+					<li><img src=""/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="car_pic_ctr">
+			<div calss="ctr_1">0°</div>
+			<div class="ctr_center" id="ctr_center">
+				<b id="barB"></b>
+			</div>
+			<div class="ctr_r">180°</div>
+		</div>
+		<script type="text/javascript">
+		var barB=document.getElementById("barB");//滑块
+		var ctr_center=document.getElementById("ctr_center");//滑到
+		var imglistlis=document.getElementById("imglist").getElementsByTagName("li");
+		//滑块的最大值left值
+		//对图片进行编号
+		//滑块的拖住模型
+		//计算点击瞬间的误差
+		//计算滑块当的位置
+		//步长：一次移动多少 假如100  转整形
+		//当信号量发生改变；滑块位置和原来不一样
+		//让之前的信号量的图去掉cur·
+		//信号量的改变
+		//改变滑块的位置
+		//点到谁
+		//阻止默认数量
+         
+         //在滑道上点击ctr_center
+</script>
+	</body>
+</html>

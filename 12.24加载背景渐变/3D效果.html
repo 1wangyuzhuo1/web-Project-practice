@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.big{
+				width: 300px;
+				height:300px;
+				margin:30px auto;
+				/*perspective: 500px;/*景深*/*/
+			}
+			.small{
+				width: 300px;
+				height:300px;
+				position:relative;
+				transform: rotateX(0deg);/*一开始旋转0度*/
+				transition: all 2s;/*过渡*/
+				transform-style:preserve-3d;/*3D组合*/
+			}
+			img{
+				width: 300px;
+				height:300px;
+				position:absolute;
+				top:0px;
+				left:0px;
+			}
+			.baiqian{
+				transform:rotateX(90deg) translateZ(150px);
+			}
+			.yuzhuo{
+				transform:translateZ(150PX); 
+			}
+			.big:hover .small{
+				transform: rotateX(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small">
+				<img src="img/a.jpg" class="baiqian">
+				<img src="img/b.jpg" class="yuzhuo">
+			</div>
+		</div>
+	</body>
+</html>

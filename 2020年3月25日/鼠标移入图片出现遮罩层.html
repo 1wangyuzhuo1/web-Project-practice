@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 500px;
+				height: 500px;
+				border: 1px solid black;
+				margin: 50px;
+				float: left;
+			}
+			.tu{
+				width: 500px;
+				height: 500px;
+				position: relative;
+				
+			}
+			.inbox{
+				display: none;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 500px;
+				height: 80px;
+				border: 1px solid black;
+				
+			}
+			.mask{
+				width: 100%;
+				height: 80px;
+				background-color: black;
+				opacity:0.6;
+				/*filter: alpha(opacity=60);*/
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+			}
+			.tu h3{
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				color: #fff;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="tu">
+				<img src="img/1.jpg"width="500px"height="500px"/>
+				<div class="inbox">
+					<div class="mask"></div>
+					<h3>我妈妈和我</h3>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="tu">
+				<img src="img/3.jpg"width="500px"height="500px"/>
+				<div class="inbox">
+					<div class="mask"></div>
+					<h3>我婆婆和我</h3>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="tu">
+				<img src="img/2.jpg"/width="500px"height="500px">
+				<div class="inbox">
+					<div class="mask"></div>
+					<h3>我弟弟和我</h3>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="tu">
+				<img src="img/4.jpg"width="500px"height="500px" />
+				<div class="inbox">
+					<div class="mask"></div>
+					<h3>我爸爸和我</h3>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".box").mouseenter(function  () {
+				$(this).find(".inbox").fadeIn(500);
+			})
+			$(".box").mouseleave(function  () {
+				$(this).find(".inbox").fadeOut(500);
+			})
+		</script>
+	</body>
+</html>

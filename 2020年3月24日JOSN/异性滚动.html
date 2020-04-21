@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.yixing{
+				width:670px;
+				height:221px;
+				/*background-color: url(img/pic_bg,gif);此处没有背景图*/
+				margin: 100px auto;
+				border: 1px solid #000;
+				position: relative;
+			}
+			.yixing ul{
+				list-style:none;
+			}
+			.yixing ul li{
+				position: absolute;
+			}
+			.yixing ul li img{
+				height: 100%;
+				width: 100%;
+			}
+			.yixing ul li.ststeA{width: 55px;height: 37px;left: -55px;top: 84px;}
+			
+			.yixing ul li.ststeB{width: 71px;height: 54px;left: 16px;top: 67px;}
+
+			.yixing ul li.ststeC{width: 122px;height: 86px;left: 104px;top: 35px;}
+			.yixing ul li.ststeD{width: 161px;height: 112px;left: 247px;top: 16px;}
+			.yixing ul li.ststeE{width: 122px;height: 86px;left: 436px;top: 35px;}
+			.yixing ul li.ststeF{width: 71px;height: 54px;left: 583px;top: 67px;}
+			.yixing ul li.ststeG{width: 55px;height: 37px;left: 678px;top: 84px;}
+			.rightBtn{
+				position: absolute;
+				top: 264px;
+				right: 374px;
+				width: 40px;
+				height: 40px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="yixing">
+			<ul>
+				<li class="ststeA"><img src="img/0.png"/></li>
+				<li class="ststeB"><img src="img/1.png"/></li>
+				<li class="ststeC"><img src="img/2.png"/></li>
+				<li class="ststeD"><img src="img/3.png"/></li>
+				<li class="ststeE"><img src="img/4.png"/></li>
+				<li class="ststeF"><img src="img/5.png"/></li>
+				<li class="ststeG"><img src="img/6.png"/></li>
+			</ul>
+		</div>
+		<div class="buts">   <!--按钮-->
+			<a href="#" id="rightBtn" class="rightBtn"></a>
+		</div>
+		<script type="text/javascript">
+			var lis=document.getElementsByTagName("li");
+			var rightBth=document.getElementById("rightBtn");
+			var JSONarr=[];
+			//把所有的状态推到数组
+			for(var i=0;i<lis.length;i++){
+				JSONarr.push({
+					"width":parseInt(fetchComputedStyle(lis[i],"width")),
+					"height":parseInt(fetchComputedStyle(lis[i],"height")),
+					"top":parseInt(fetchComputedStyle(lis[i],"top")),
+					"left":parseInt(fetchComputedStyle(lis[i],"left")),
+				})
+			}
+			console.log(JSONarr);
+			rightBth.onclick=function  () {
+				for(var i=1;i<=6;i++){
+					animate(lis[i],JSONarr[i-1],600,"BounceEaseOut");
+				}
+			}
+		</script>
+	</body>
+</html>

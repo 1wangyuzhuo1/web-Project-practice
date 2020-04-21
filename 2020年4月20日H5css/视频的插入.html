@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	  	<!--<video src="img/视频.mp4" autoplay controls width="400" height="500"></video>-->
+	  	
+	  	
+	  	<!--<video controls autoplay loop width="400">
+	  		<source src="img/视频.mp4"></source>
+	  	</video>-->
+	  	
+	  	<!--poster:视频播放之前显示的图片-->
+	  	<input type="button"  value="播放"  id="auto"/>
+	  	<input type="button"  value="放大"  onclick="big()"/>
+	  	<input type="button"  value="缩小"  onclick="small()"/>
+	  	<input type="button"  value="正常"  onclick="normal()"/>
+	  	<video src="img/视频.mp4" id="video1" controls width="300"  poster="img/05.jpg"></video>
+	  	<script >
+	  		var videol=document.getElementById("video1");
+	  		var auto=document.getElementById("auto");
+//	  		pause():暂停
+//	  		play():播放
+	  		auto.onclick=function auto(){
+	  			if (this.value=="播放") {
+					this.value="暂停";
+					videol.play();
+				}else{
+					this.value="播放";
+					videol.pause();
+				}
+	  		}
+	  		
+	  		function big(){
+	  			videol.width="600"
+	  		}
+	  		function small(){
+	  			videol.width="100"
+	  		}
+	  		function normal(){
+	  			videol.width="300"
+	  		}
+	  	</script>
+	</body>
+</html>

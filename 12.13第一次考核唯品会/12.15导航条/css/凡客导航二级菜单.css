@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.all {
+	border: 1px ;
+	width: 1200px;
+	height: 46px;
+	margin: 20px auto;
+}
+
+.all_left {
+	border: 1px ;
+	width: 185px;
+	height: 46px;
+	float: left;
+}
+ul{
+	list-style:none;
+}
+ul li{
+	/*border: 1px solid #838282;*/
+	border:none;
+	border-right:1px solid #838282;
+	width: 99px;
+	height: 20px;
+	float: left;
+	margin-top:24px;
+}
+ul li a{
+	text-decoration:none;
+	color:#838282;
+	display:block;/*将行内元素转换为块级元素*/
+	text-align:center;
+	line-height:20px;
+	
+}
+ul li a:hover{
+	color:red;
+}
+.k{
+	border-top:5px solid red;
+	line-height:10px;
+}
+.twolist{
+	width:99px;
+	display:none;/*将行内元素隐藏*/
+}
+.twolist p{
+	line-height: 40px;
+	color:#838282;
+	text-align:center;
+	cursor: pointer;
+	background-color: #CC9756;
+}
+.twolist p:hover{
+	color:red;
+}
+ul li:hover .twolist{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}

@@ -1,0 +1,184 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.kuang{
+	width:1226px;
+	height:460px;
+	border:1px solid black;
+	margin:auto;
+	margin-top:142px;
+	background-image:url(../img/c.webp);
+	background-repeat:none-repeat;
+	background-position:0px;
+}
+.kuang1{
+	width:234px;
+	height:460px;
+	border:1px /*solid black*/;
+	background-color:#9EA0A0;
+	float:left;
+}
+ul{
+	list-style: none;
+	margin-top:10px;		
+}
+ul li{
+	border:1px /*solid black*/;
+	width:204px;
+	height:42px;
+	padding-left:30px;
+	line-height:42px;
+	background-color:#9EA0A0;
+	cursor:pointer;
+	position:relative;
+	
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	font-size:14px;
+	display:block;
+}
+ul li:hover{
+	background-color:#FF6700;
+}
+.jiantou
+{
+	border:1px /*solid black*/;
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:13px;
+	right:25px;
+	
+}
+.jiantou img{
+	position:absolute;
+	bottom:-5px;
+	right:-8px;
+}
+.twolist{
+	height:460px;
+	width:990px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-10px;
+	background-color:white;
+}
+
+ul li:hover .twolist{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.twolist2{
+	height:460px;
+	width:990px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-52px;
+	background-color:white;
+}
+
+ul li:hover .twolist2{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.twolist3{
+	height:460px;
+	width:742px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-94px;
+	background-color:white;
+}
+
+ul li:hover .twolist3{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.twolist4{
+	height:460px;
+	width:990px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-136px;
+	background-color:white;
+}
+
+ul li:hover .twolist4{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.twolist5{
+	height:460px;
+	width:742px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-178px;
+	background-color:white;
+}
+
+ul li:hover .twolist5{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.twolist8{
+	height:460px;
+	width:990px;
+	display:none;
+	border:1px solid #C1C1C1;
+	position:absolute;
+	left:234px;
+	top:-304px;
+	background-color:white;
+}
+
+ul li:hover .twolist8{
+    display:block;/*鼠标移入的跟着显示的必须出现父子关系*/
+}
+.xhz{
+	width:245px;
+	height:75px;
+    border:1px ;
+    float:left;
+}
+.xhz img{
+	margin-top:15px;
+	margin-left:18px;
+	float:left;
+}
+.xhz p{
+      display:block;
+      float:left;
+      margin-left:20px;
+      margin-top:14px;
+}
+.xhz p:hover{
+	color:#FF6700;
+}
+.xhzz{
+	width:490px;
+	height:75px;
+    border:1px ;
+    float:left;
+}
+.xhzz img{
+	margin-top:15px;
+	margin-left:18px;
+	float:left;
+}
+.xhzz p{
+      display:block;
+      float:left;
+      margin-left:20px;
+      margin-top:14px;
+}
+.xhzz p:hover{
+	color:#FF6700;
+}

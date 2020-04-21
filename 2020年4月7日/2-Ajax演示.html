@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="btn" id="btn" value="出来~" />
+		<div id="content">
+			
+		</div>
+		<script type="text/javascript">
+			var btn=document.getElementById("btn");
+			var btn=document.getElementById("content");
+			btn.onclick=function(){
+				//小黄人
+				//1Ajax的一个固定的模板：
+                //2第1步创建一个xhr对象，使用new关键来调用一个内置构造函数,空的对象
+				var xhr=new XMLHttpRequest();
+				//就绪状态   就绪状态改变时触发function中
+				xhr.onreadystatechange=function(){
+					//第2步指定接收回来的内容，怎么处理。
+					//监听xhr对象的onreadystatechange事件，
+					//这个事件在xhr对象的“就绪状态”改变的时候触发。我们只关心就绪状态为4的时候的事情。
+					if (xhr.readyState==4) {
+						console.log(xhr.responseText);
+						content.innerHTML=xhr.responseText;
+					}
+				}
+				//第3步创建一个请求，第一个参数是请求的类型get或者post，
+				//第二个参数就是请求的路径，可以往后拼接
+				//第三个参数叫做是否使用异步机制
+				xhr.open("get","2.txt？"+Math.random(),true);
+				//第4步发送请求，圆括号里面是请求头内容，get请求没有报文头写null
+				xhr.send(null);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				position: relative;
+				width: 60px;
+				height: 60px;
+				background: blue;
+				left: 100px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		 <input type="button"  value="stop()" />
+		 <input type="button"  value="stop(true)" />
+		 <input type="button"  value="stop(true,ture)" />
+		 <input type="button"  value="stop(false,ture)" />
+		 <input type="button"  value="finish()" />
+		 <div id="all"></div>
+		 <script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript">
+		 	//给盒子一个动画
+		 	$("div").animate({"left":800},2000)
+		 	$("div").animate({"top":300},2000)
+		 	$("div").animate({"left":100},2000)
+		 	$("div").animate({"top":100},2000)
+		 	//观察盒子的停止情况
+		 	$("input:eq(0)").click(function  () {
+		 		$("div").stop();
+		 	})
+		 	$("input:eq(1)").click(function () {
+		 		$("div").stop(true);
+		 	})
+		 	$("input:eq(2)").click(function  () {
+		 		$("div").stop(true,true);
+		 	})
+		 	$("input:eq(3)").click(function  () {
+		 		$("div").stop(false,true);
+		 	})
+		 	$("input:eq(4)").click(function  () {
+		 		$("div").finish();
+		 	})
+		 </script>
+	</body>
+</html>
