@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* function fun(name){
+            name=name||"王二小";
+            console.log(name);
+        }
+        fun();    //王二小
+        fun("放牛娃"); //放牛娃*/
+
+
+        
+        //默认参数
+        function fun1(name="小魔仙"){
+            console.log(name);
+        }
+       fun1();//小魔仙
+       fun1("商细蕊");//商细蕊
+
+
+       //剩余参数
+       function fun2(a,...reset){
+           console.log(a);
+           console.log(reset);
+       }
+       fun2(11);//11 []
+       fun2(110,22,333,44);//110 3[22,333,44]
+
+
+       //,"王玉卓","白倩","杜芳媛"
+       var arr=["全媛媛","王婷","王丹"];
+       function fun3(a,b,c){
+             console.log(a,b,c);
+       }
+       fun3(arr[0],arr[1],arr[2]);//序列
+       fun3(null,arr);//数组形式
+       fun3.apply(null,arr);//序列
+       fun3.call(null,arr[0],arr[1],arr[2]);//序列
+       fun3(...arr); //参数的映射  序列
+
+      
+
+    </script>
+</body>
+</html>
